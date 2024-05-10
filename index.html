@@ -134,6 +134,7 @@
     height: auto; /* Maintain aspect ratio */
     animation: falling 20s linear both, spin 10s linear;
 }
+        
 
 @keyframes fall {
     0% {
@@ -190,11 +191,24 @@
 #leaf3 {
     animation-delay: 42s, 0s; 
 }
+        .corner-text {
+            position: absolute;
+            bottom: 40px;   /* Adjust to position correctly */
+            right: 40px; /* Adjust to position correctly */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: larger;
+            margin: 20px;
+            border: #FFFFFF, 3px;
+        }
     </style>
 </head>
 
 <body>
     <div class="moon"></div>
+     <div class="corner-text">CRA Town Hall Session, 2024</div>
     <div id="rain-container"></div>
 
     <div class="content-container">
